@@ -1,0 +1,137 @@
+/* Core Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --forest: #294936;
+    --green: #547653;
+    --sage: #dce6d5;
+    --cream: #f7f6f0;
+    --white: #ffffff;
+    --text: #29332b;
+    --muted: #657064;
+ 
+    --sand: #E3D9C6;
+    --coffee: #4E220F;
+}
+
+/* Individual Elements */
+
+/* Text */
+h1 {
+    font-size: 50px;
+    color: var(--forest);
+}
+
+h3 {
+    color: var(--coffee)
+}
+
+h4 {
+    color: var(--coffee)
+}
+
+p {
+  color: var(--text);
+}
+
+
+img {
+    max-width: 50% ;
+    height: auto ;
+    display: block ;
+}
+
+/* Classes */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--cream);
+}
+
+/* Navigation Header */
+.site-header {
+    background-color: var(--forest);
+    color: var(--white);
+    padding: 2rem;
+    text-align: right ;
+    border-bottom: 1px solid var(--muted) ;
+}
+
+.site-header a {
+    text-decoration: none ;
+    color: var(--white) ;
+    font-weight: 600 ;
+    margin-left: 1.5rem ;
+}
+
+/* Sections */
+
+/* Heading */
+.heading {
+    text-align: center ;
+    padding: 10% 0 ;
+    background-color: var(--sage);
+    color: var(--forest) ;
+}
+
+.heading p {
+    font-size: 20px;
+    color: var(--text);
+}
+
+/* Subheading */
+.subheading {
+    background-color: var(--sand);
+    padding: 10% 0 ;
+}
+
+.subheading p {
+    font-size: 15px;
+    color: var(--text);
+}
+
+/* Section 1 */
+.section-1{
+    background-color: var(--cream);
+}
+
+/* Section 2 */
+.section-2{
+    background-color: var(--sand);
+}
+
+/* Section 3 */
+.section-3{
+    background-color: var(--sage);
+    /* margin: 1rem auto;*/
+}
+
+/* img gallery */
+.img-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: fill;
+    display: block;
+}
+
+/* Tableau */
+.tableauPlaceholder{
+    margin: 0 !important;
+    padding: 0 !important;
+}
