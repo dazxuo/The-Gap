@@ -1,0 +1,123 @@
+/* Applies to everything */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --forest: #294936;
+    --green: #547653;
+    --sage: #dce6d5;
+    --cream: #f7f6f0;
+    --white: #ffffff;
+    --text: #29332b;
+    --muted: #657064;
+}
+
+/* Individual Elements */
+p{
+  color: var(--text);
+  margin: 0 auto;
+}
+
+img {
+    max-width: 100% ;
+    height: auto ;
+    display: block ;
+}
+
+/* Body */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--cream);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.section-1{
+    background-color: var(--cream);
+}
+
+.section-2{
+    background-color: var(--green);
+}
+
+.section-2 p{
+    color: var(--cream);
+}
+
+.section-3{
+    background-color: var(--forest);
+}
+
+.section-3 p{
+    color: var(--muted);
+}
+
+/* Navigation Header */
+.site-header {
+    background-color: var(--forest);
+    color: var(--white);
+    padding: 2rem;
+    text-align: right ;
+    border-bottom: 1px solid var(--sage) ;
+}
+
+.site-header a {
+    text-decoration: none ;
+    color: var(--white) ;
+    font-weight: 600 ;
+    margin-left: 1.5rem ;
+}
+
+/*Heading*/
+.heading {
+    background-color: var(--muted);
+    text-align: center;
+    padding: 10% 0;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: var(--forest);
+    /*margin-bottom: 10px;*/
+}
+
+.heading p {
+    font-size: 20px;
+    color: var(--text);
+}
+
+/* Image Gallery */
+.img-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*daz was here*/
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.tableauPlaceholder{
+    max-width: 1200px ;
+    align-items: center ;
+    margin: 0px ;
+}
